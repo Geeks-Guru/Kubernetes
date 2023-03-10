@@ -1,4 +1,4 @@
-![Logo de Kubernetes](/images/kubernetes.png.png){ width=50% }
+![Logo de Kubernetes](/images/kubernetes.png.png)
 # Présentation de Kubernetes
 
 Kubernetes est une plate-forme open-source extensible et portable pour la gestion de charges de travail (workloads) et de services conteneurisés. Elle favorise à la fois l'écriture de configuration déclarative (declarative configuration) et l'automatisation. C'est un large écosystème en rapide expansion. Les services, le support et les outils Kubernetes sont largement disponibles.
