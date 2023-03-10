@@ -6,7 +6,7 @@ Kubernetes est une plate-forme open-source extensible et portable pour la gestio
 ## Architecture de Kubernetes
 Kubernetes fonctionne sur la base d'un état défini et d'un état réel. Les objets Kubernetes représentent l'état d'un cluster. Ils indiquent à Kubernetes à quoi vous voulez que la charge de travail ressemble.
 
-![Architecture Kubernetes](images/kubernetes-constructs-concepts-architecture.jpg)
+![Architecture Kubernetes](/images/kubernetes-constructs-concepts-architecture.jpg)
 
 ## Quelques éléments à connaitre
 - **Noeuds** 
