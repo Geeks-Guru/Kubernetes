@@ -24,7 +24,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 - **Tester la version Kubectl installé** 
 `kubectl version --client`
 
-- **Installation de Docker** 
+- **Installation de Docker** \
  **Ubuntu - Debian :** `sudo apt-get update -y &&  sudo apt-get install -y docker.io` \
  **CentOS - RedHat :** `sudo yum update && sudo yum install -y docker.io`
 
