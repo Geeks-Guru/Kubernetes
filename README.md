@@ -1,3 +1,3 @@
 **KUBERNETES**
 
-![Kubernetes Icon for Kubernetes Module](/kubernetes.png.png "Orchestration with Kubernetes")
+![Kubernetes Icon for Kubernetes Module](images/kubernetes.png.png "Orchestration with Kubernetes")
