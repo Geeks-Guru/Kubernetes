@@ -4,7 +4,7 @@ metadata:
   name: wp-mysql 
   labels:
     name: wordpress
-  namespace: wordpress
+  #namespace: wordpress
 spec:
   type: ClusterIP
   selector:
