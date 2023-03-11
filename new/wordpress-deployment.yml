@@ -28,7 +28,7 @@ spec:
         env:
         - name: WORDPRESS_DB_HOST
 #          value: wp-mysql #mysql-deployment
-           valueFrom:
+          valueFrom:
             secretKeyRef:
               name: app-wordpress-secret
               key: mysql-db-host
