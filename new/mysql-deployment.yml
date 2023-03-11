@@ -4,7 +4,7 @@ metadata:
   name: wp-mysql #mysql-deployment
   labels:
     app: wordpress
-  namespace: wordpress
+#  namespace: wordpress
 spec:
   replicas: 1
   selector:
@@ -24,17 +24,17 @@ spec:
         image: mysql:5.7 #mysql
         env:
         - name: MYSQL_DATABASE
-          value: wordpress
-#          valueFrom:
-#            secretKeyRef:
-#              name: mysqldb-secret
-#              key: mysql-database-name
+#          value: wordpress
+          valueFrom:
+            secretKeyRef:
+              name: app-wordpress-secret
+              key: mysql-database-name
         - name: MYSQL_USER
-          value: toto
-#          valueFrom:
-#            secretKeyRef:
-#              name: mysqldb-secret
-#              key: mysql-root-username
+          #value: toto
+          valueFrom:
+            secretKeyRef:
+              name: app-wordpress-secret
+              key: mysql-root-username
         - name: MYSQL_PASSWORD
           valueFrom:
             secretKeyRef:

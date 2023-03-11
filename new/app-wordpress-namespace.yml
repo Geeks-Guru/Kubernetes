@@ -3,4 +3,4 @@ kind:   Namespace
 metadata:
     name: wordpress
 status:
-    phase:  Active
+    phase: Active

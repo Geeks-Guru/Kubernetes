@@ -1,5 +1,5 @@
-ressources:
-    -   app-wordpress-namespace.yaml
+resources:
+    #-   app-wordpress-namespace.yaml
     -   mysql-deployment.yaml
     -   app-wordpress-secret.yaml
     -   service-clusterip-mysql.yaml

@@ -4,7 +4,7 @@ metadata:
   name: wordpress
   labels:
     app: wordpress
-  namespace: wordpress
+#  namespace: wordpress
 spec:
   replicas: 1
   selector:
@@ -27,19 +27,23 @@ spec:
           name: wordpress #add
         env:
         - name: WORDPRESS_DB_HOST
-          value: wp-mysql #mysql-deployment
+#          value: wp-mysql #mysql-deployment
+           valueFrom:
+            secretKeyRef:
+              name: app-wordpress-secret
+              key: mysql-db-host
         - name: WORDPRESS_DB_NAME
-          value: wordpress
-#          valueFrom:
-#            secretKeyRef:
-#              name: mysqldb-secret
-#              key: mysql-database-name
+#          value: wordpress
+          valueFrom:
+            secretKeyRef:
+              name: app-wordpress-secret
+              key: mysql-database-name
         - name: WORDPRESS_DB_USER
-          value: toto
-#          valueFrom:
-#            secretKeyRef:
-#              name: mysqldb-secret
-#              key: mysql-root-username
+#          value: toto
+          valueFrom:
+            secretKeyRef:
+              name: app-wordpress-secret
+              key: mysql-root-username
         - name: WORDPRESS_DB_PASSWORD
           valueFrom:
             secretKeyRef:
